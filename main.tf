@@ -1,7 +1,6 @@
 # Create VPC
 resource "ibm_is_vpc" "vpc" {
   name = "${var.vpc_name}"
-  # resource_group  = "${data.ibm_resource_group.resource_group.id}"
 }
 # VPC Zones
 resource "ibm_is_vpc_address_prefix" "vpc-ap1" {
